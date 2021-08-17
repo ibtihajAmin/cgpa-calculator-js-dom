@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGPA Calculator</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="mt-12 mx-auto">
+        <h1 class="text-5xl text-gray-700 text-center font-medium">Calculate Your <span
+                class="text-purple-500 font-bold">CGPA</span></h1>
+    </header>
+
+    <main class="mt-12 w-3/4 mx-auto">
+        <div class="grid grid-cols-3">
+            <div class="showing-grade-point bg-green-500 rounded p-8 mx-2 shadow-xl">
+                <h3 class="text-2xl text-center">Grade-Point:</h3>
+                <h2 class="text-4xl text-center">0.00</h2>
+            </div>
+
+            <div class="showing-grade-point bg-yellow-400 rounded p-8 mx-2 shadow-xl">
+                <h3 class="text-2xl text-center">GPA:</h3>
+                <h2 class="text-4xl text-center"></h2>
+            </div>
+
+            <div class="showing-grade-point bg-indigo-400 rounded p-8 mx-2 shadow-xl">
+                <h3 class="text-2xl text-center">Percentage:</h3>
+                <h2 class="text-4xl text-center">%</h2>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 mt-12 bg-purple-50 shadow-lg p-8 rounded">
+            <div class="mx-10">
+                <input type="text" class="w-96 mb-4 h-8" placeholder="Course-1">
+                <input type="text" class="w-96 mb-4 ml-4 h-8" placeholder="Grade Point">
+            </div>
+            <div class="mx-10">
+                <input type="text" class="w-96 mb-4 h-8" placeholder="Course-2">
+                <input type="text" class="w-96 mb-4 ml-4 h-8" placeholder="Grade Point">
+            </div>
+            <div class="mx-10">
+                <input type="text" class="w-96 mb-4 h-8" placeholder="Course-3">
+                <input type="text" class="w-96 mb-4 ml-4 h-8" placeholder="Grade Point">
+            </div>
+            <div class="mx-10">
+                <input type="text" class="w-96 mb-4 h-8" placeholder="Course-4">
+                <input type="text" class="w-96 mb-4 ml-4 h-8" placeholder="Grade Point">
+            </div>
+            <button
+                class="mx-auto rounded-lg w-32 p-3 bg-gradient-to-r from-green-300 via-green-400 to-green-500">Submit</button>
+        </div>
+
+
+
+    </main>
+</body>
+
+</html>
