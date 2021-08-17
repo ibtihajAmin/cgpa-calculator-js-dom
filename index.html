@@ -6,57 +6,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CGPA Calculator</title>
+    <!-- tailwindcss cdn  -->
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
 <body>
+    <!-- header/top portion  -->
     <header class="mt-12 mx-auto">
         <h1 class="text-5xl text-gray-700 text-center font-medium">Calculate Your <span
                 class="text-purple-500 font-bold">CGPA</span></h1>
     </header>
 
     <main class="mt-12 w-3/4 mx-auto">
+        <!-- output portion for grape point, gpa, Percentage  -->
         <div class="grid grid-cols-3">
             <div class="showing-grade-point bg-green-500 rounded p-8 mx-2 shadow-xl">
                 <h3 class="text-2xl text-center">Grade-Point:</h3>
-                <h2 class="text-4xl text-center">0.00</h2>
+                <h2 class="text-4xl text-center " id="grade-point">0.00</h2>
             </div>
 
             <div class="showing-grade-point bg-yellow-400 rounded p-8 mx-2 shadow-xl">
                 <h3 class="text-2xl text-center">GPA:</h3>
-                <h2 class="text-4xl text-center"></h2>
+                <h2 class="text-4xl text-center" id="gpa"></h2>
             </div>
 
             <div class="showing-grade-point bg-indigo-400 rounded p-8 mx-2 shadow-xl">
                 <h3 class="text-2xl text-center">Percentage:</h3>
-                <h2 class="text-4xl text-center">%</h2>
+                <h2 class="text-4xl text-center" id="percent">%</h2>
             </div>
         </div>
-
+        <!-- input portion for course name and obtained grade point  -->
         <div class="grid grid-cols-1 mt-12 bg-purple-50 shadow-lg p-8 rounded">
             <div class="mx-10">
-                <input type="text" class="w-96 mb-4 h-8" placeholder="Course-1">
-                <input type="text" class="w-96 mb-4 ml-4 h-8" placeholder="Grade Point">
+                <input type="text" class="w-96 mb-4 h-8" id="course_1_credit" placeholder="Credit hour for course-1">
+                <input type="text" class="w-96 mb-4 ml-4 h-8" id="course_1_gp" placeholder="Grade Point">
             </div>
             <div class="mx-10">
-                <input type="text" class="w-96 mb-4 h-8" placeholder="Course-2">
-                <input type="text" class="w-96 mb-4 ml-4 h-8" placeholder="Grade Point">
+                <input type="text" class="w-96 mb-4 h-8" id="course_2_credit" placeholder="Credit hour for course-2">
+                <input type="text" class="w-96 mb-4 ml-4 h-8" id="course_2_gp" placeholder="Grade Point">
             </div>
             <div class="mx-10">
-                <input type="text" class="w-96 mb-4 h-8" placeholder="Course-3">
-                <input type="text" class="w-96 mb-4 ml-4 h-8" placeholder="Grade Point">
+                <input type="text" class="w-96 mb-4 h-8" id="course_3_credit" placeholder="Credit hour for course-3">
+                <input type="text" class="w-96 mb-4 ml-4 h-8" id="course_3_gp" placeholder="Grade Point">
             </div>
             <div class="mx-10">
-                <input type="text" class="w-96 mb-4 h-8" placeholder="Course-4">
-                <input type="text" class="w-96 mb-4 ml-4 h-8" placeholder="Grade Point">
+                <input type="text" class="w-96 mb-4 h-8" id="course_4_credit" placeholder="Credit hour for course-4">
+                <input type="text" class="w-96 mb-4 ml-4 h-8" id="course_4_gp" placeholder="Grade Point">
             </div>
-            <button
-                class="mx-auto rounded-lg w-32 p-3 bg-gradient-to-r from-green-300 via-green-400 to-green-500">Submit</button>
+            <button class="mx-auto rounded-lg w-32 p-3 bg-gradient-to-r from-green-300 via-green-400 to-green-500"
+                id="submit-btn">Submit</button>
         </div>
 
 
 
     </main>
+
+    <script src="js/calc.js"></script>
 </body>
 
 </html>
